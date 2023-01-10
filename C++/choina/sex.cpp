@@ -18,7 +18,7 @@ int main() {
     
     for(int i = 1; i <= height; i++) {
         for(int a = 0; a < ((max-1) / 2); a++) {
-            cout << " ";
+            cout << termcolor::on_color<64,69,100> << " ";
         }
         for(int b = 0; b < n; b++) {
             type = rand() % 10;
@@ -27,7 +27,7 @@ int main() {
             } else if(type < 8) {
                 cout << termcolor::green << "*";
             } else {
-                cout << termcolor::blue << "%";
+                cout << termcolor::cyan << "%";
             }
         }
         for(int c = 0; c < ((max-1) / 2); c++) {
@@ -35,7 +35,7 @@ int main() {
         }
         max = max - 2;
         n = n + 2;
-        cout << endl;
+        cout << termcolor::dark << endl;
     }
 cout << endl;
 
