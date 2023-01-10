@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include "include/termcolor.hpp"
 
 using namespace std;
 
@@ -22,11 +23,11 @@ int main() {
         for(int b = 0; b < n; b++) {
             type = rand() % 10;
             if(type == 5 || type == 4) {
-                cout << "#";
+                cout << termcolor::red << "#";
             } else if(type < 8) {
-                cout << "*";
+                cout << termcolor::green << "*";
             } else {
-                cout << "%";
+                cout << termcolor::blue << "%";
             }
         }
         for(int c = 0; c < ((max-1) / 2); c++) {
