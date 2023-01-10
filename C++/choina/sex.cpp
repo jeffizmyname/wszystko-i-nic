@@ -17,6 +17,7 @@ int main() {
     max = 2 * height - 1; 
     
     for(int i = 1; i <= height; i++) {
+        cout << " ";
         for(int a = 0; a < ((max-1) / 2); a++) {
             cout << termcolor::on_color<64,69,100> << " ";
         }
@@ -33,11 +34,12 @@ int main() {
         for(int c = 0; c < ((max-1) / 2); c++) {
             cout << " ";
         }
+        cout << " ";
         max = max - 2;
         n = n + 2;
-        cout << termcolor::dark << endl;
+        cout << endl;
     }
-cout << endl;
+    cout << termcolor::dark << endl;
 
     system("pause");
     return 0;
